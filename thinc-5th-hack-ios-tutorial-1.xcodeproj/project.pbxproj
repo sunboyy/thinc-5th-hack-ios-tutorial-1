@@ -13,6 +13,9 @@
 		8413B3B12061507E00877907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8413B3B02061507E00877907 /* Assets.xcassets */; };
 		8413B3B42061507E00877907 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8413B3B22061507E00877907 /* LaunchScreen.storyboard */; };
 		8413B3BC206151E600877907 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8413B3BB206151E600877907 /* Data.swift */; };
+		847FEF3B206174F30062D7C1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FEF3A206174F30062D7C1 /* ProfileViewController.swift */; };
+		847FEF412061EA2B0062D7C1 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 847FEF402061EA2A0062D7C1 /* profile.json */; };
+		847FEF43206214010062D7C1 /* SecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FEF42206214010062D7C1 /* SecretViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		8413B3B32061507E00877907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8413B3B52061507E00877907 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8413B3BB206151E600877907 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		847FEF3A206174F30062D7C1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		847FEF402061EA2A0062D7C1 /* profile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
+		847FEF42206214010062D7C1 /* SecretViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +68,10 @@
 				8413B3B02061507E00877907 /* Assets.xcassets */,
 				8413B3B22061507E00877907 /* LaunchScreen.storyboard */,
 				8413B3B52061507E00877907 /* Info.plist */,
+				847FEF402061EA2A0062D7C1 /* profile.json */,
 				8413B3BB206151E600877907 /* Data.swift */,
+				847FEF3A206174F30062D7C1 /* ProfileViewController.swift */,
+				847FEF42206214010062D7C1 /* SecretViewController.swift */,
 			);
 			path = "thinc-5th-hack-ios-tutorial-1";
 			sourceTree = "<group>";
@@ -127,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8413B3B42061507E00877907 /* LaunchScreen.storyboard in Resources */,
+				847FEF412061EA2B0062D7C1 /* profile.json in Resources */,
 				8413B3B12061507E00877907 /* Assets.xcassets in Resources */,
 				8413B3AF2061507E00877907 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847FEF43206214010062D7C1 /* SecretViewController.swift in Sources */,
 				8413B3AC2061507E00877907 /* ViewController.swift in Sources */,
 				8413B3BC206151E600877907 /* Data.swift in Sources */,
+				847FEF3B206174F30062D7C1 /* ProfileViewController.swift in Sources */,
 				8413B3AA2061507E00877907 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

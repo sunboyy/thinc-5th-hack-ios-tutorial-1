@@ -1,0 +1,157 @@
+{ 
+  "Cherprang": {
+        "name":"เฌอปราง อารีย์กุล",
+      "birth":"2 May 1996",
+      "height":"160 cm",
+      "blood":"B"
+    },
+    "Cancan":{
+        "name":"นายิกา ศรีเนียน",
+        "birth":"10 Nov 1997",
+        "height":"160 cm",
+        "blood":"B"
+    },
+    "Izurina":{
+        "name":"รินะ อิซึตะ",
+        "birth":"26 Nov 1995",
+        "height":"158 cm",
+        "blood":"A"
+    },
+    "Jaa":{
+        "name":"ณปภัช วรพฤทธานนท์",
+        "birth":"20 Jan 2003",
+        "height":"160 cm",
+        "blood":"B"
+    },
+    "Jen": {
+        "name":"กุลจิราณัฐ อินทรศิลป์",
+        "birth":"23 Mar 2000",
+        "height":"159 cm",
+        "blood":"B"
+    },
+    "Jennis":{
+        "name":"เจนนิษฐ์ โอ่ประเสริฐ",
+        "birth":"4 Jul 2000",
+        "height":"161 cm",
+        "blood":"O"
+      },
+      "Jib": {
+        "name":"สุชญา แสนโคต",
+        "birth":"4 Jul 2002",
+        "height":"159 cm",
+        "blood":"A"
+      },
+      "Keaw":{
+        "name":"ณัฐรุจา ชุติวรรณโสภณ",
+        "birth":"31 Mar 1994",
+        "height":"156 cm",
+        "blood":"B"
+      },
+      "Kaimook":{
+        "name":"วรัทยา ดีสมเลิศ",
+        "birth":"27 Aug 1997",
+        "height":"153 cm",
+        "blood":"O"
+      },
+      "Kate":{
+        "name":"กรภัทร์ นิลประภา",
+        "birth":"9 Jun 2001",
+        "height":"162 cm",
+        "blood":"B"
+      },
+      "Korn":{
+        "name":"วฑูศิริ ภูวปัญญาสิริ",
+        "birth":"21 Jan 1999",
+        "height":"163 cm",
+        "blood":"O"
+      },
+      "Maysa":{
+        "name":"เมษา จีนะวิจารณะ",
+        "birth":"8 Apr 1999",
+        "height":"162 cm",
+        "blood":"A"
+      },
+      "Mind":{"name":"ปณิศา ศรีละเลิง",
+        "birth":"6 Sep 2001",
+        "height":"165 cm",
+        "blood":"B"
+      },
+      "Miori":{
+        "name":"มิโอริ โอคุโบะ",
+        "birth":"30 Sep 19986",
+        "height":"153 cm",
+        "blood":"O"
+      },
+      "Mobile":{
+        "name":"พิมรภัส ผดุงวัฒนะโชค",
+        "birth":"9 Jul 2002",
+        "height":"159 cm",
+        "blood":"O"
+      },
+      "Music":{
+        "name":"แพรวา สุธรรมพงษ์",
+        "birth":"24 Feb 2001",
+        "height":"158 cm",
+        "blood":"B"
+      },
+      "Namnueng":{
+        "name":"มิลิน ดอกเทียน",
+        "birth":"11 Nov 1996",
+        "height":"160 cm",
+        "blood":"B"
+      },
+      "Namsai":{
+        "name":"พิชญาภา นาถา",
+        "birth":"26 Oct 1999",
+        "height":"170 cm",
+        "blood":"O"
+      },
+      "Nink":{
+        "name":"มนัญญา เกาะจู",
+        "birth":"3 Feb 2000",
+        "height":"163 cm",
+        "blood":"B"
+      },
+      "Noey":{
+        "name":"กานต์ธีรา วัชรทัศนกุล",
+        "birth":"9 Apr 1997",
+        "height":"158 cm",
+        "blood":"AB"
+      },
+      "Orn":{
+        "name":"พัศชนันท์ เจียจิรโชติ",
+        "birth":"3 Feb 1997",
+        "height":"164 cm",
+        "blood":"O"
+      },
+      "Piam":{
+        "name":"รินรดา อินทร์ไธสง",
+        "birth":"4 Jun 2003",
+        "height":"159 cm",
+        "blood":"B"
+      },
+      "Pun":{
+        "name":"ปัญสิกรณ์ ติยะกร",
+        "birth":"9 Nov 2000",
+        "height":"166 cm",
+        "blood":"A"
+      },
+      "Pupe":{
+        "name":"จิรดาภา อินทจักรล",
+        "birth":"18 Jan 1998",
+        "height":"160 cm",
+        "blood":"B"
+      },
+      "Satchan":{
+        "name":"สวิชญา ขจรรุ่งศิลป์",
+        "birth":"13 Dec 2003",
+        "height":"150 cm",
+        "blood":"A"
+      },
+      "Tarwaan":{
+        "name":"อิสราภา ธวัชภักดี",
+        "birth":"18 Dec 1996",
+        "height":"156 cm",
+        "blood":"O"
+      }
+}
