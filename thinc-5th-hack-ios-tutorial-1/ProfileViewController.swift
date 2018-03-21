@@ -10,33 +10,63 @@ import UIKit
 import LocalAuthentication
 class ProfileViewController: UIViewController {
     var data:String!
+    
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true) {
+        }
+    }
+    
     @IBOutlet weak var nameText: UILabel!
     @IBOutlet weak var birthText: UILabel!
     @IBOutlet weak var heightText: UILabel!
     @IBOutlet weak var bloodTypeText: UILabel!
     
     @IBAction func callBtn(_ sender: Any) {
-        touchId()
+        touchId() //pls impletment inside the method to perform secretView
     }
     
-    @IBAction func backBtnPressed(_ sender: Any) {
-        dismiss(animated: true) {
-        }
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        var member = loadJson(name: data)
-        nameText.text = member?.name
-        birthText.text = member?.birth
-        heightText.text = member?.height
-        bloodTypeText.text = member?.blood
+        //to be implement the weak var labeltext //assign value from loadJson()
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func loadJson(name: String)->Person?{
+        if let path = Bundle.main.path(forResource: "profile", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                let list = try! JSONDecoder().decode(ResponseData.self, from: data)
+                print(list)
+                return nil //to be implement & fix
+            } catch {
+                // handle error
+            }
+        }
+     return nil
     }
+    
+    func touchId(){
+        let context = LAContext()
+        var error: NSError?
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "Authenticate with Touch ID"
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
+                {(succes, error) in
+                    if succes {
+                       //performsegue & create segue link by yourself
+                        print("call")
+                    }else {
+                        self.showAlertController("Touch ID Authentication Failed")
+                    }
+            } )
+        }
+        else {
+            showAlertController("Touch ID not available")
+        }
+
+    }
+    
     
     struct ResponseData: Decodable {
         var personNames: [String]
@@ -65,47 +95,17 @@ class ProfileViewController: UIViewController {
         var height: String
         var blood: String
     }
-
     
-    func loadJson(name: String)->Person?{
-        if let path = Bundle.main.path(forResource: "profile", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                let list = try! JSONDecoder().decode(ResponseData.self, from: data)
-                return list.personDetails[list.personNames.index(of: name)!]
-            } catch {
-                // handle error
-            }
-        }
-     return nil
-    }
-    
-    func touchId(){
-        let context = LAContext()
-        var error: NSError?
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
-            
-            let reason = "Authenticate with Touch ID"
-            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
-                {(succes, error) in
-                    if succes {
-                        self.performSegue(withIdentifier: "showSecret", sender: nil)
-                        print("call")
-                    }else {
-                        self.showAlertController("Touch ID Authentication Failed")
-                    }
-            } )
-        }
-        else {
-            showAlertController("Touch ID not available")
-        }
-
-    }
     
     func showAlertController(_ message: String) {
         let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alertController, animated: true, completion: nil)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 

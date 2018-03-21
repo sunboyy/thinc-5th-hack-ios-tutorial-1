@@ -60,9 +60,6 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaO-jz-lB8">
                                 <rect key="frame" x="40" y="120" width="295" height="407"/>
-                                <connections>
-                                    <segue destination="9Ll-bh-h78" kind="presentation" id="nwY-EI-xta"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.99556392431259155" green="0.9142451286315918" blue="0.91278558969497681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,15 +107,9 @@
                                     <navigationItem title="Profile" id="ZAm-a9-piV">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="PM2-eF-erQ">
                                             <color key="tintColor" red="0.99676865179999996" green="0.99676865179999996" blue="0.99676865179999996" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="backBtnPressed:" destination="9Ll-bh-h78" id="fqL-bf-AYI"/>
-                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Call" id="JIQ-zM-jpA">
                                             <color key="tintColor" red="0.98819595575332642" green="0.98413890600204468" blue="0.99639469385147095" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <connections>
-                                                <action selector="callBtn:" destination="9Ll-bh-h78" id="tRZ-eW-8HW"/>
-                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -206,13 +197,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jZV-Y9-2Kn"/>
                     </view>
-                    <connections>
-                        <outlet property="birthText" destination="zgc-0R-Xd4" id="R0u-PC-0Pq"/>
-                        <outlet property="bloodTypeText" destination="6ID-0C-Tae" id="xQh-Y5-zzu"/>
-                        <outlet property="heightText" destination="h4q-8a-f8c" id="KPo-Pw-lQk"/>
-                        <outlet property="nameText" destination="9vr-bO-shk" id="5Ju-ye-jWc"/>
-                        <segue destination="Rop-JH-yv8" kind="show" identifier="showSecret" id="mly-AB-Mzl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5V-NQ-7vF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,9 +215,6 @@
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" red="0.026547083631157875" green="0.059007063508033752" blue="0.055049814283847809" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="backBtn:" destination="Rop-JH-yv8" eventType="touchUpInside" id="cRT-60-vff"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -27,13 +27,13 @@ class ViewController: UIViewController {
     
     func randomMember() -> Member {
         random = Int(arc4random_uniform(UInt32(bnk48Members.count)))
-       
         return bnk48Members[random]
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let data = bnk48Members[random].name
         if let destinationViewController = segue.destination as? ProfileViewController {
-            destinationViewController.data = data
+            //pls sent the data from viewController page to profileViewController page to display profile of current member
         }
     }
 }
