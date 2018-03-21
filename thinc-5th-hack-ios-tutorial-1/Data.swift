@@ -11,7 +11,11 @@ class Member {
         self.name = name
         self.image = image
     }
+   
 }
+
+
+
 
 let bnk48Members = [
     Member(name: "Can", image: #imageLiteral(resourceName: "can")),
